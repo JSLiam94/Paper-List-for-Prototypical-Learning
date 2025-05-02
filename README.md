@@ -10,12 +10,13 @@
   
 </div>
 
-**🦉 Contributors: [Junhao Jia (23' HDU Undergraduate)](https://github.com/BeistMedAI), [Yifei Sun (22' HDU-ITMO Undergraduate)](https://diaoquesang.github.io/), [Shuo Jiang (23' HDU Undergraduate)](https://github.com/JSLiam94), [Hanwen Zheng (23' HDU Undergraduate)](https://github.com/BeistMedAI), [Yuting Shi (23' HDU Undergraduate)](https://github.com/sytttttttt)**
+**🦉 Contributors: [Junhao Jia (23' HDU Undergraduate)](https://github.com/BeistMedAI), [Yifei Sun (22' HDU-ITMO Undergraduate)](https://diaoquesang.github.io/), [Shuo Jiang (23' HDU Undergraduate)](https://github.com/JSLiam94), [Hanwen Zheng (23' HDU Undergraduate)](https://github.com/Zhenghanwen-zhw), [Yuting Shi (23' HDU Undergraduate)](https://github.com/sytttttttt)**
 
 ### Welcome to join us by contacting: 23080631@hdu.edu.cn.
 
 <div>
-<img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/HDU.png" height="45px" href="https://www.hdu.edu.cn/">
+<img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/HDU.png" 
+<img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/ITMO.png" height="45px" href="https://www.hdu.edu.cn/">
 <img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/SRIBD.png" height="45px" href="https://www.sribd.cn/">
 <img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/CUHK-SZ.png" height="45px" href="https://www.cuhk.edu.cn/zh-hans">
 </div>
@@ -36,6 +37,7 @@
 }
 </pre>
 
+https://github.com/jakesnell/prototypical-networks
 
 ![alt text](image.png)
 
@@ -53,6 +55,7 @@
 }
 </pre>
 
+https://github.com/cfchen-duke/ProtoPNet
 
 ![alt text](image-1.png)
 
@@ -67,6 +70,8 @@
   year={2023}
 }
 </pre>
+
+未开源
 
 ![alt text](image-2.png)
 
@@ -84,6 +89,8 @@
 }
 </pre>
 
+https://github.com/tfzhou/ProtoSeg
+
 ![alt text](image-3.png)
   
 - [[WACV 2023]](https://openaccess.thecvf.com/content/WACV2023/papers/Sacha_ProtoSeg_Interpretable_Semantic_Segmentation_With_Prototypical_Parts_WACV_2023_paper.pdf) **Protoseg: Interpretable semantic segmentation with prototypical parts**
@@ -98,9 +105,118 @@
 }
 </pre>
 
+https://github.com/gmum/proto-segmentation
+
 ![alt text](image-4.png)
 
-*: *Papers for Medical Prototypical Learning (single-label)*
+- [[WACV 2025]](https://ieeexplore.ieee.org/abstract/document/10943616) **Multi-Scale Grouped Prototypes for Interpretable Semantic Segmentation**
+
+<pre>
+@inproceedings{porta2025multi,
+  title={Multi-Scale Grouped Prototypes for Interpretable Semantic Segmentation},
+  author={Porta, Hugo and Dalsasso, Emanuele and Marcos, Diego and Tuia, Devis},
+  booktitle={2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  pages={2869--2880},
+  year={2025},
+  organization={IEEE}
+}
+</pre>
+
+https://github.com/eceo-epfl/ScaleProtoSeg
+
+![alt text](image-16.png)
+
+## 🕒 4. Non-parametric Part Prototype Learning
+
+- [[arXiv 2025]](https://arxiv.org/pdf/2503.10247) **Interpretable Image Classification via Non-parametric Part Prototype Learning**
+
+<pre>
+@inproceedings{zhou2022rethinking,
+  title={Rethinking semantic segmentation: A prototype view},
+  author={Zhou, Tianfei and Wang, Wenguan and Konukoglu, Ender and Van Gool, Luc},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={2582--2593},
+  year={2022}
+}
+</pre>
+
+https://github.com/zijizhu/proto-non-param
+
+![alt text](image-15.png)
+
+## 🕒 5. Pixel-grounded prototypical part networks
+
+- [[WACV 2024]](https://openaccess.thecvf.com/content/WACV2024/papers/Carmichael_Pixel-Grounded_Prototypical_Part_Networks_WACV_2024_paper.pdf) **Pixel-grounded prototypical part networks**
+
+<pre>
+@inproceedings{carmichael2024pixel,
+  title={Pixel-grounded prototypical part networks},
+  author={Carmichael, Zachariah and Lohit, Suhas and Cherian, Anoop and Jones, Michael J and Scheirer, Walter J},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={4768--4779},
+  year={2024}
+}
+</pre>
+
+https://github.com/merlresearch/PixPNet
+
+![alt text](image-19.png)
+
+## 🕒 5. Adaptive Prototype-based Vision Transformers
+
+- [[NeurIPS 2024]](https://proceedings.neurips.cc/paper_files/paper/2024/file/48dfc849640344e2d58df0b5bb78c33b-Paper-Conference.pdf) **Interpretable Image Classification with Adaptive Prototype-based Vision Transformers**
+
+<pre>
+@inproceedings{carmichael2024pixel,
+  title={Pixel-grounded prototypical part networks},
+  author={Carmichael, Zachariah and Lohit, Suhas and Cherian, Anoop and Jones, Michael J and Scheirer, Walter J},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={4768--4779},
+  year={2024}
+}
+</pre>
+
+https://github.com/Henrymachiyu/ProtoViT
+
+![alt text](image-20.png)
+
+## 🕒 6. Multi-level concept prototypes
+
+- [[CVPR 2024]](https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_MCPNet_An_Interpretable_Classifier_via_Multi-Level_Concept_Prototypes_CVPR_2024_paper.pdf) **Mcpnet: An interpretable classifier via multi-level concept prototypes**
+
+<pre>
+@inproceedings{wang2024mcpnet,
+  title={Mcpnet: An interpretable classifier via multi-level concept prototypes},
+  author={Wang, Bor-Shiun and Wang, Chien-Yi and Chiu, Wei-Chen},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10885--10894},
+  year={2024}
+}
+</pre>
+
+https://github.com/NVlabs/MCPNet
+
+![alt text](image-21.png)
+
+## 🕒 7. Invertible Prototypical Network
+
+- [[ECCV 2024]](https://arxiv.org/pdf/2407.12200) **This Probably Looks Exactly Like That: An Invertible Prototypical Network**
+
+<pre>
+@inproceedings{carmichael2024probably,
+  title={This probably looks exactly like that: An invertible prototypical network},
+  author={Carmichael, Zachariah and Redgrave, Timothy and Cedre, Daniel Gonzalez and Scheirer, Walter J},
+  booktitle={European Conference on Computer Vision},
+  pages={221--240},
+  year={2024},
+  organization={Springer}
+}
+</pre>
+
+https://github.com/craymichael/ProtoFlow
+
+![alt text](image-22.png)
+
 
 ## 🕐 1. Diabetic retinopathy grading
 
@@ -116,6 +232,8 @@
   organization={Springer}
 }
 </pre>
+
+https://github.com/lindehesse/INSightR-Net
 
 ![alt text](image-5.png)
 
@@ -134,6 +252,8 @@
 }
 </pre>
 
+未开源
+
 ![alt text](image-6.png)
 
 - [[TMI 2023]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10225391) **An Interpretable and Accurate Deep-Learning Diagnosis Framework Modeled With Fully and Semi-Supervised Reciprocal Learning**
@@ -150,6 +270,8 @@
   publisher={IEEE}
 }
 </pre>
+
+未开源
 
 ![alt text](image-8.png)
 
@@ -168,7 +290,139 @@
 }
 </pre>
 
+https://github.com/ai-med/PANIC
+
 ![alt text](image-9.png)
+
+## 🕒 4.  Uncertainty-aware aortic stenosis classification in echocardiography
+
+- [[MICCAI 2023]](https://arxiv.org/pdf/2307.14433) **ProtoASNet: Dynamic Prototypes for Inherently  Interpretable and Uncertainty-Aware Aortic  Stenosis Classification in Echocardiography**
+
+<pre>
+@inproceedings{vaseli2023protoasnet,
+  title={Protoasnet: Dynamic prototypes for inherently interpretable and uncertainty-aware aortic stenosis classification in echocardiography},
+  author={Vaseli, Hooman and Gu, Ang Nan and Ahmadi Amiri, S Neda and Tsang, Michael Y and Fung, Andrea and Kondori, Nima and Saadat, Armin and Abolmaesumi, Purang and Tsang, Teresa SM},
+  booktitle={International conference on medical image computing and computer-assisted intervention},
+  pages={368--378},
+  year={2023},
+  organization={Springer}
+}
+</pre>
+
+https://github.com/hooman007/ProtoASNet
+
+![alt text](image-11.png)
+
+- [[MedIA 2025]](https://www.sciencedirect.com/science/article/pii/S1361841525001471) **ProtoASNet: Comprehensive evaluation and enhanced performance with uncertainty estimation for Aortic stenosis classification in echocardiography**
+
+<pre>
+@article{gu2025protoasnet,
+  title={ProtoASNet: Comprehensive evaluation and enhanced performance with uncertainty estimation for Aortic stenosis classification in echocardiography},
+  author={Gu, Ang Nan and Vaseli, Hooman and Tsang, Michael Y and Wu, Victoria and Amiri, S Neda Ahmadi and Kondori, Nima and Fung, Andrea and Tsang, Teresa SM and Abolmaesumi, Purang},
+  journal={Medical Image Analysis},
+  pages={103600},
+  year={2025},
+  publisher={Elsevier}
+}
+</pre>
+
+https://github.com/hooman007/ProtoASNet
+
+![alt text](image-12.png)
+
+## 🕒 5.  Hierarchical prototypes to handle the complexity of lesions in medical images
+
+- [[JBHI 2025]](https://ieeexplore.ieee.org/abstract/document/10955117) *Progressive Mining and Dynamic Distillation of Hierarchical Prototypes for Disease Classification and Localisation**
+
+<pre>
+@article{wang2025progressive,
+  title={Progressive Mining and Dynamic Distillation of Hierarchical Prototypes for Disease Classification and Localisation},
+  author={Wang, Chong and Liu, Fengbei and Chen, Yuanhong and Kwok, Chun Fung and Elliott, Michael and Pena-Solorzano, Carlos and McCarthy, Davis James and Frazer, Helen and Carneiro, Gustavo},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2025},
+  publisher={IEEE}
+}
+</pre>
+
+未开源
+
+![alt text](image-13.png)
+
+## 🕒 6.  Prototypes for Multi-label Disease Diagnosis
+
+- [[TMI 2025]](https://ieeexplore.ieee.org/abstract/document/10887396) *Cross-and Intra-image Prototypical Learning for Multi-label Disease Diagnosis and Interpretation**
+
+<pre>
+@article{wang2025cross,
+  title={Cross-and Intra-image Prototypical Learning for Multi-label Disease Diagnosis and Interpretation},
+  author={Wang, Chong and Liu, Fengbei and Chen, Yuanhong and Frazer, Helen and Carneiro, Gustavo},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2025},
+  publisher={IEEE}
+}
+</pre>
+
+https://github.com/cwangrun/CIPL
+
+![alt text](image-14.png)
+
+## 🕒 7.  Characteristic discriminative prototype network with detailed interpretation for classification
+
+- [[PR 2025]](https://www.sciencedirect.com/science/article/pii/S0031320324006526) *Characteristic discriminative prototype network with detailed interpretation for classification**
+
+<pre>
+@article{wen2025characteristic,
+  title={Characteristic discriminative prototype network with detailed interpretation for classification},
+  author={Wen, Jiajun and Kong, Heng and Lai, Zhihui and Zhu, Zhijie},
+  journal={Pattern Recognition},
+  volume={157},
+  pages={110901},
+  year={2025},
+  publisher={Elsevier}
+}
+</pre>
+
+未开源
+
+![alt text](image-17.png)
+
+*: *Papers for Prototypical Learning (AAAI)*
+
+- [AAAI 2025] **ProtoArgNet: Interpretable Image Classification with Super-Prototypes and Argumentation**
+
+<pre>
+@inproceedings{ayoobi2025protoargnet,
+  title={ProtoArgNet: Interpretable Image Classification with Super-Prototypes and Argumentation},
+  author={Ayoobi, Hamed and Potyka, Nico and Toni, Francesca},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={2},
+  pages={1791--1799},
+  year={2025}
+}
+</pre>
+
+https://github.com/H-Ayoobi/ProtoArgNet_AAAI
+
+![alt text](image-10.png)
+
+- [AAAI 2024] **Interpretability benchmark for evaluating spatial misalignment of prototypical parts explanations**
+
+<pre>
+@inproceedings{sacha2024interpretability,
+  title={Interpretability benchmark for evaluating spatial misalignment of prototypical parts explanations},
+  author={Sacha, Miko{\l}aj and Jura, Bartosz and Rymarczyk, Dawid and Struski, {\L}ukasz and Tabor, Jacek and Zieli{\'n}ski, Bartosz},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={19},
+  pages={21563--21573},
+  year={2024}
+}
+</pre>
+
+https://github.com/gmum/interpretability-benchmark
+
+![alt text](image-18.png)
 
 ## 🥰 Star History
 
