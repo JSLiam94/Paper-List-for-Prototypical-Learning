@@ -10,13 +10,13 @@
   
 </div>
 
-**🦉 Contributors: [Junhao Jia (23' HDU Undergraduate)](https://github.com/BeistMedAI), [Yifei Sun (22' HDU-ITMO Undergraduate)](https://diaoquesang.github.io/), [Shuo Jiang (23' HDU Undergraduate)](https://github.com/JSLiam94), [Hanwen Zheng (23' HDU Undergraduate)](https://github.com/Zhenghanwen-zhw), [Yuting Shi (23' HDU Undergraduate)](https://github.com/sytttttttt)**
+**🦉 Contributors: [Junhao Jia (23' HDU Undergraduate)](https://github.com/BeistMedAI), [Yifei Sun (22' HDU-ITMO Undergraduate)](https://diaoquesang.github.io/), [Shuo Jiang (23' HDU Undergraduate)](https://github.com/JSLiam94), [Hanwen Zheng (23' HDU Undergraduate)](https://github.com/Zhenghanwen-zhw), [Yuting Shi (23' HDU Undergraduate)](https://github.com/sytttttttt), [Huangwei Chen (22' HDU Undergraduate)](https://github.com/HovChen)**
 
 ### Welcome to join us by contacting: 23080631@hdu.edu.cn.
 
 <div>
-<img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/HDU.png" 
-<img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/ITMO.png" height="45px" href="https://www.hdu.edu.cn/">
+<img src="https://github.com/diaoquesang/Paper-List-for-Medical-Anomaly-Detection/blob/main/logos/HDU.png" height="45px" href="https://www.hdu.edu.cn/">
+<img src="https://github.com/diaoquesang/Paper-List-for-Medical-Anomaly-Detection/blob/main/logos/ITMO.jpg" height="45px" href="https://en.itmo.ru/">
 <img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/SRIBD.png" height="45px" href="https://www.sribd.cn/">
 <img src="https://github.com/BeistMedAI/Paper-List-for-Prototypical-Learning/blob/main/logos/CUHK-SZ.png" height="45px" href="https://www.cuhk.edu.cn/zh-hans">
 </div>
