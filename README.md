@@ -977,6 +977,32 @@ compacctness : 紧凑性
 
 - [[2022-MICCAI]](https://arxiv.org/pdf/2208.00457) **INSightR-Net: interpretable neural network for regression using similarity-based comparisons to prototypical examples** [:octocat:](https://github.com/lindehesse/INSightR-Net)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Convolutional neural networks (CNNs) have shown exceptional performance for a range of medical imaging tasks. 
+However, conventional CNNs are not able to explain their reasoning process, therefore limiting their adoption 
+in clinical practice. 
+In this work, we propose an inherently interpretable CNN for regression using similarity-based comparisons 
+(INSightR-Net) and demonstrate our methods on the task of diabetic retinopathy grading. 
+A prototype layer incorporated into the architecture enables visualization of the areas in the image that 
+are most similar to learned prototypes. 
+The final prediction is then intuitively modeled as a mean of prototype labels, weighted by the similarities.
+We achieved competitive prediction performance with our INSightR-Net compared to a ResNet baseline, showing 
+that it is not necessary to compromise performance for interpretability. 
+Furthermore, we quantified the quality of our explanations using sparsity and diversity, two concepts
+considered important for a good explanation, and demonstrated the effect of several parameters on 
+the latent space embeddings.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+compromise : 妥协
+</pre>
+</details>
+
 <pre>
 @inproceedings{hesse2022insightr,
   title={INSightR-Net: interpretable neural network for regression using similarity-based comparisons to prototypical examples},
@@ -991,6 +1017,38 @@ compacctness : 紧凑性
 ![alt text](images/image-21.png)
 
 - [[2024-MICCAI]](https://arxiv.org/pdf/2406.15168) **This actually looks like that: Proto-BagNets for local and global interpretability-by-design** [:octocat:](https://github.com/kdjoumessi/Proto-BagNets)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Interpretability is a key requirement for the use of machine learning models in high-stakes 
+applications, including medical diagnosis. 
+Explaining black-box models mostly relies on post-hoc methods that do not faithfully reflect 
+the model’s behavior. 
+As a remedy, prototype-based networks have been proposed, but their interpretability is limited
+as they have been shown to provide coarse, unreliable, and imprecise explanations. 
+In this work, we introduce Proto-BagNets6, an interpretable-by-design prototype-based model that 
+combines the advantages of bag-of-local feature models and prototype learning to provide meaningful,
+coherent, and relevant prototypical parts needed for accurate and interpretable image classification 
+tasks. 
+We evaluated the Proto-BagNet for drusen detection on publicly available retinal OCT data. 
+The ProtoBagNet performed comparably to the state-of-the-art interpretable and non-interpretable 
+models while providing faithful, accurate, and clinically meaningful local and global explanations.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+high-stakes : 高风险
+remedy : 补救措施
+coarse : 粗略的
+interpretable-by-design : 设计上可解释的
+coherent : 连贯的
+drusen : 黄斑
+retinal : 视网膜
+</pre>
+</details>
 
 <pre>
 @inproceedings{djoumessi2024actually,
@@ -1007,6 +1065,46 @@ compacctness : 紧凑性
 
 - [[2025-JBHI]](https://ieeexplore.ieee.org/abstract/document/10955117) **Progressive Mining and Dynamic Distillation of Hierarchical Prototypes for Disease Classification and Localisation** [:octocat:](https://github.com/cwangrun/HierProtoPNet)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Constructing effective representation of lesions is essential for disease classification and localization
+in medical image analysis. 
+Prototype-based models address this by leveraging visual prototypes to capture representative lesion patterns, 
+yet effectively handling the complexity of diverse lesion characteristics remains a critical challenge, 
+as they typically rely on single-level, fixed-size prototypes and suffer from prototype redundancy. 
+In this paper, we present HierProtoPNet, a new prototype-based framework designed to handle the complexity of
+lesions in medical images. 
+HierProtoPNet leverages hierarchical visual prototypes across different semantic feature
+granularities to effectively capture diverse lesion patterns.
+To prevent redundancy and increase utility of the prototypes, we devise a novel prototype 
+mining paradigm to progressively discover semantically distinct prototypes, offering 
+multi-level complementary analysis of lesions. 
+Also, we introduce a dynamic knowledge distillation strategy that allows transferring essential classification 
+information across hierarchical levels, thereby improving generalisation performance. 
+Comprehensive experiments show that HierProtoPNet achieves state-of-the-art classification performances in 
+three benchmarks: binary breast cancer screening, multi-class retinal disease diagnosis, 
+and multi-label chest X-ray classification. 
+Quantitative assessments also illustrate HierProtoPNet’s significant advantages in weakly-supervised disease 
+localisation and segmentation.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+Progressive Mining : 渐进式挖掘
+Distillation : 蒸馏
+Hierarchical : 分层的
+redundancy : 冗余
+granularities : 粒度
+complementary analysis : 互补分析
+binary breast cancer screening : 乳腺癌筛查
+multi-class retinal disease diagnosis : 视网膜疾病诊断
+multi-label chest X-ray classification : 胸部X光分类
+</pre>
+</details>
+
 <pre>
 @article{wang2025progressive,
   title={Progressive Mining and Dynamic Distillation of Hierarchical Prototypes for Disease Classification and Localisation},
@@ -1022,6 +1120,41 @@ compacctness : 紧凑性
 🕐 (2) Cancer
 
 - [[2023-JBHI]](https://ieeexplore.ieee.org/abstract/document/10290723) **Interpretable inference and classification of tissue types in histological colorectal cancer slides based on ensembles adaptive boosting prototype tree** 
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Digital pathology images are treated as the “gold standard” for the diagnosis of colorectal lesions,
+especially colon cancer. 
+Real-time, objective and accurate inspection results will assist clinicians to choose symptomatic
+treatment in a timely manner, which is of great significance in clinical medicine. 
+However, Manual methods suffers from long inspection cycle and serious reliance on
+subjective interpretation. 
+It is also a challenging task for existing computer-aided diagnosis methods to obtain models that are 
+both accurate and interpretable. 
+Models that exhibit high accuracy are always more complex and opaque, while interpretable models may lack 
+the necessary accuracy. 
+Therefore, the framework of ensemble adaptive boosting prototype tree is proposed to predict the colorectal
+pathology images and provide interpretable inference by visualizing the decision-making process in each base learner.
+The results showed that the proposed method could effectively address the “accuracy-interpretability trade-off”
+issue by ensemble of m adaptive boosting neural prototype trees. The superior performance of the framework
+provides a novel paradigm for interpretable inference and high-precision prediction of pathology image patches 
+in computational pathology.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+histological : 细胞学
+colorectal : 结肠
+colon cancer : 结肠癌
+inspection : 检查
+symptomatic : 临床表现
+Manual : 手工
+opaque : 不透明的
+</pre>
+</details>
 
 <pre>
 @article{liang2023interpretable,
@@ -1040,6 +1173,41 @@ compacctness : 紧凑性
 
 - [[2023-ECAI]](https://arxiv.org/pdf/2307.10404) **Interpreting and correcting medical image classification with pip-net** 
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Part-prototype models are explainable-by-design image classifiers, and a promising alternative to black 
+box AI. 
+This paper explores the applicability and potential of interpretable machine learning, in particular 
+PIP-Net, for automated diagnosis support on real-world medical imaging data. 
+PIP-Net learns human-understandable prototypical image parts and we evaluate its accuracy and 
+interpretability for fracture detection and skin cancer diagnosis. 
+We find that PIP-Net’s decision making process is in line with medical classification standards, 
+while only provided with image-level class labels. 
+Because of PIP-Net’s unsupervised pretraining of prototypes, data quality problems such as undesired 
+text in an X-ray or labelling errors can be easily identified. 
+Additionally, we are the first to show that humans can manually correct the reasoning of PIP-Net by 
+directly disabling undesired prototypes. 
+We conclude that part-prototype models are promising for medical applications due to their
+interpretability and potential for advanced model debugging.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+histological : 细胞学
+colorectal : 结肠
+colon cancer : 结肠癌
+inspection : 检查
+symptomatic : 临床表现
+Manual : 手工
+opaque : 不透明的
+manually correct : 手动纠正
+disabling : 禁用
+</pre>
+</details>
+
 <pre>
 @inproceedings{nauta2023interpreting,
   title={Interpreting and correcting medical image classification with pip-net},
@@ -1054,6 +1222,38 @@ compacctness : 紧凑性
 ![alt text](images/image-26.png)
 
 - [[2023-TMI]](https://ieeexplore.ieee.org/abstract/document/10225391) **An Interpretable and Accurate Deep-Learning Diagnosis Framework Modeled With Fully and Semi-Supervised Reciprocal Learning** [:octocat:](https://github.com/sendyma/Medical-XAI)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+The deployment of automated deep-learning classifiers in clinical practice has the potential to 
+streamline the diagnosis process and improve the diagnosis accuracy, but the acceptance of those 
+classifiers relies on both their accuracy and interpretability. 
+In general, accurate deep-learning classifiers provide little model interpretability, while 
+interpretable models do not have competitive classification accuracy. 
+In this paper, we introduce a new deep-learning diagnosis framework, called InterNRL, that is
+designed to be highly accurate and interpretable. 
+InterNRL consists of a student-teacher framework, where the student model is an interpretable 
+prototype-based classifier (ProtoPNet) and the teacher is an accurate global image classifier (GlobalNet). 
+The two classifiers are mutually optimised with a novel reciprocal learning paradigm in which the
+student ProtoPNet learns from optimal pseudo labels produced by the teacher GlobalNet, while GlobalNet learns from
+ProtoPNet’s classification performance and pseudo labels.
+This reciprocal learning paradigm enables InterNRL to be flexibly optimised under both fully- and semi-supervised 
+learning scenarios, reaching state-of-the-art classification performance in both scenarios for the tasks of 
+breast cancer and retinal disease diagnosis. 
+Moreover, relying on weakly-labelled training images, InterNRL also achieves superior breast cancer localisation 
+and brain tumour segmentation results than other competing methods.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+Reciprocal learning : 互惠学习
+pseudo labels : 伪标签
+tumour segmentation : 肿瘤分割
+</pre>
+</details>
 
 <pre>
 @article{wang2023interpretable,
