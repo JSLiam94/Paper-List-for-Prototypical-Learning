@@ -155,6 +155,34 @@ primate : 灵长类动物
 
 - [[2021-ICML]](https://arxiv.org/pdf/2105.02968) **This Looks Like That... Does it_Shortcomings of Latent Space Prototype Interpretability in Deep Networks** [:octocat:](https://github.com/fanconic/this-does-not-look-like-that)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Deep neural networks that yield human interpretable decisions by architectural design have
+become an increasingly popular alternative to posthoc interpretation of traditional black-box models. 
+Among these networks, the arguably most widespread approach is so-called prototype learning, 
+where similarities to learned latent prototypes serve as the basis of classifying unseen data. 
+In this work, we point to a crucial shortcoming of such approaches. 
+Namely, there is a semantic gap between similarity in latent space and input space,
+which can corrupt interpretability. 
+We design two experiments that exemplify this issue on the so-called ProtoPNet. 
+We find that its interpretability mechanism can be led astray by crafted noise or
+JPEG compression artefacts, which can lead to incoherent decisions. 
+We argue that practitioners ought to have this shortcoming in mind when
+deploying prototype-based models in practice.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+corrupt : 腐烂
+exemplify : 举例说明
+astray : 误导
+practitioners : 从业人员
+</pre>
+</details>
+
 <pre>
 @misc{hoffmann2021looks,
     title={This Looks Like That... Does it? Shortcomings of Latent Space Prototype Interpretability in Deep Networks}, 
