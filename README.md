@@ -66,10 +66,12 @@ When we are faced with challenging image classification tasks, we often explain 
 </details>
 
 <details>
-<summary> Vocabulary </summary>
-- dissecting : 解剖
-- ornithologists : 鸟类学家
-- analogous : 类似的
+  <summary> Vocabulary </summary>
+  <pre>
+  - dissecting : 解剖
+  - ornithologists : 鸟类学家
+  - analogous : 类似的
+  </pre>
 </details>
 
 <pre>
