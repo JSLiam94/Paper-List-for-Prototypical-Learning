@@ -1766,6 +1766,35 @@ trustworthiness : 信任度
 
 ![alt text](images/image-36.png)
 
+- [[2022-ECCV]](https://arxiv.org/pdf/2207.04818) **Cross-modal Prototype Driven Network for Radiology Report Generation** [:octocat:](https://github.com/markin-wang/xpronet)
+
+<pre>
+@inproceedings{wang2022cross,
+  title={Cross-modal prototype driven network for radiology report generation},
+  author={Wang, Jun and Bhalerao, Abhir and He, Yulan},
+  booktitle={European Conference on Computer Vision},
+  pages={563--579},
+  year={2022},
+  organization={Springer}
+}
+</pre>
+
+![alt text](images/image-47.png)
+
+- [[2023-MM]](https://web.archive.org/web/20231029063238id_/https://dl.acm.org/doi/pdf/10.1145/3581783.3613837) **Prototype-guided knowledge transfer for federated unsupervised cross-modal hashing** [:octocat:](https://github.com/Tam-JQK/PT-FUCH_P)
+
+<pre>
+@inproceedings{li2023prototype,
+  title={Prototype-guided knowledge transfer for federated unsupervised cross-modal hashing},
+  author={Li, Jingzhi and Li, Fengling and Zhu, Lei and Cui, Hui and Li, Jingjing},
+  booktitle={Proceedings of the 31st ACM international conference on multimedia},
+  pages={1013--1022},
+  year={2023}
+}
+</pre>
+
+![alt text](images/image-48.png)
+
 - [[2024-ISBI]](https://ieeexplore.ieee.org/abstract/document/10635182) **Explainable transformer prototypes for medical diagnoses** [:octocat:](http://www.github.com/NUBagcilab/r2r_proto)
 
 <pre>
