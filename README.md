@@ -223,7 +223,6 @@ engender : 产生
 </pre>
 </details>
 
-
 <pre>
 @inproceedings{kim2022hive,
   title={HIVE: Evaluating the human interpretability of visual explanations},
@@ -238,6 +237,35 @@ engender : 产生
 ![alt text](images/image-4.png)
 
 - [[2022-ECCV]](https://arxiv.org/pdf/2112.02902) **Interpretable image classification with differentiable prototypes assignment** [:octocat:](https://github.com/gmum/ProtoPool)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Existing prototypical-based models address the black-box nature of deep learning. 
+However, they are sub-optimal as they often assume separate prototypes for each class, require multi-step 
+optimization, make decisions based on prototype absence (so-called negative reasoning process), 
+and derive vague prototypes. 
+To address those shortcomings, we introduce ProtoPool, an interpretable prototype-based model with
+positive reasoning and three main novelties. 
+Firstly, we reuse prototypes in classes, which significantly decreases their number. 
+Secondly, we allow automatic, fully differentiable assignment of prototypes to classes, which
+substantially simplifies the training process. 
+Finally, we propose a new focal similarity function that contrasts the prototype from the background
+and consequently concentrates on more salient visual features. 
+We show that ProtoPool obtains state-of-the-art accuracy on the CUB-200-2011
+and the Stanford Cars datasets, substantially reducing the number of prototypes. 
+We provide a theoretical analysis of the method and a user study to show that our prototypes capture 
+more salient features than those obtained with competitive methods.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+derive : 推导
+vague : 模糊的
+</pre>
+</details>
 
 <pre>
 @inproceedings{rymarczyk2022interpretable,
@@ -254,6 +282,38 @@ engender : 产生
 
 - [[2023-CVPR]](https://openaccess.thecvf.com/content/CVPR2023/papers/Nauta_PIP-Net_Patch-Based_Intuitive_Prototypes_for_Interpretable_Image_Classification_CVPR_2023_paper.pdf) **Pip-net: Patch-based intuitive prototypes for interpretable image classification** [:octocat:](https://github.com/M-Nauta/PIPNet)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Interpretable methods based on prototypical patches recognize various components in an image 
+in order to explain their reasoning to humans. 
+However, existing prototype-based methods can learn prototypes that are not in line with human visual 
+perception, i.e., the same prototype can refer to different concepts in the real world, making 
+interpretation not intuitive. 
+Driven by the principle of explainability-by-design, we introduce PIP-Net (Patch-based Intuitive 
+Prototypes Network): an interpretable image classification model that learns prototypical parts 
+in a self-supervised fashion which correlate better with human vision. 
+PIP-Net can be interpreted as a sparse scoring sheet where the presence of a prototypical part in 
+an image adds evidence for a class. 
+The model can also abstain from a decision for out-of-distribution data by saying “I haven’t seen this before”. 
+We only use image-level labels and do not rely on any part annotations. 
+PIP-Net is globally interpretable since the set of learned prototypes shows the entire reasoning of the model.
+A smaller local explanation locates the relevant prototypes in one image. 
+We show that our prototypes correlate with ground-truth object parts, indicating that PIP-Net closes
+the “semantic gap” between latent space and pixel space.
+Hence, our PIP-Net with interpretable prototypes enables users to interpret the decision making process in 
+an intuitive, faithful and semantically meaningful way.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+intuitive : 直观的
+abstain : 弃权
+</pre>
+</details>
+
 <pre>
 @inproceedings{nauta2023pip,
   title={Pip-net: Patch-based intuitive prototypes for interpretable image classification},
@@ -267,6 +327,39 @@ engender : 产生
 ![alt text](images/image-6.png)
 
 - [[2023-ICCV]](https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_Learning_Support_and_Trivial_Prototypes_for_Interpretable_Image_Classification_ICCV_2023_paper.pdf) **Learning support and trivial prototypes for interpretable image classification**[:octocat:](https://github.com/cwangrun/ST-ProtoPNet)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Prototypical part network (ProtoPNet) methods have been designed to achieve interpretable classification by
+associating predictions with a set of training prototypes, which we refer to as trivial prototypes because 
+they are trained to lie far from the classification boundary in the feature space. 
+Note that it is possible to make an analogy between ProtoPNet and support vector machine (SVM)
+given that the classification from both methods relies on computing similarity with a set of training points 
+(i.e., trivial prototypes in ProtoPNet, and support vectors in SVM).
+However, while trivial prototypes are located far from the classification boundary, support vectors are 
+located close to this boundary, and we argue that this discrepancy with the well-established SVM theory 
+can result in ProtoPNet models with inferior classification accuracy. 
+In this paper, we aim to improve the classification of ProtoPNet with a new method to learn support prototypes 
+that lie near the classification boundary in the feature space, as suggested by the SVM theory.
+In addition, we target the improvement of classification results with a new model, named ST-ProtoPNet,
+which exploits our support prototypes and the trivial prototypes to provide more effective classification. 
+Experimental results on CUB-200-2011, Stanford Cars, and Stanford Dogs datasets demonstrate that ST-ProtoPNet 
+achieves state-of-the-art classification accuracy and interpretability results. 
+We also show that the proposed support prototypes tend to be better localised in the object of interest rather
+than in the background region.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+trivial : 微不足道的
+analogy : 类比
+discrepancy : 差异
+inferior : 劣等的
+</pre>
+</details>
 
 <pre>
 @inproceedings{wang2023learning,
@@ -282,6 +375,38 @@ engender : 产生
 
 - [[2023-ICCV]](https://openaccess.thecvf.com/content/ICCV2023/papers/Huang_Evaluation_and_Improvement_of_Interpretability_for_Self-Explainable_Part-Prototype_Networks_ICCV_2023_paper.pdf) **Evaluation and improvement of interpretability for self-explainable part-prototype networks** 
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Part-prototype networks (e.g., ProtoPNet, ProtoTree, and ProtoPool) have attracted broad research interest 
+for their intrinsic interpretability and comparable accuracy to non-interpretable counterparts. 
+However, recent works find that the interpretability from prototypes is fragile, due to the semantic gap 
+between the similarities in the feature space and that in the input space. 
+In this work, we strive to address this challenge by making the first attempt to quantitatively and
+objectively evaluate the interpretability of the part-prototype networks. 
+Specifically, we propose two evaluation metrics, termed as “consistency score” and “stability score”, 
+to evaluate the explanation consistency across images and the explanation robustness against perturbations, 
+respectively, both of which are essential for explanations taken into practice. 
+Furthermore, we propose an elaborated part-prototype network with a shallow-deep feature alignment (SDFA) 
+module and a score aggregation (SA) module to improve the interpretability of prototypes. 
+We conduct systematical evaluation experiments and provide substantial discussions to uncover the 
+interpretability of existing part-prototype networks. 
+Experiments on three benchmarks across nine architectures demonstrate that our model achieves 
+significantly superior performance to the state of the art, in both the accuracy and interpretability.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+intrinsic : 内在的
+fragile : 脆弱的
+strive : 努力的
+perturbations : 扰动
+uncover : 揭示
+</pre>
+</details>
+
 <pre>
 @inproceedings{huang2023evaluation,
   title={Evaluation and improvement of interpretability for self-explainable part-prototype networks},
@@ -294,7 +419,37 @@ engender : 产生
 
 ![alt text](images/image-8.png)
 
-- [[2023-NIPS]](https://proceedings.neurips.cc/paper_files/paper/2023/file/7b76eea0c3683e440c3d362620f578cd-Paper-Conference.pdf) **This Looks Like Those_Illuminating Prototypical Concepts Using Multiple Visualizations** [:octocat:](https://github.com/Henrymachiyu/This-looks-like-those_ProtoConcepts)
+- [[2023-NIPS]](https://proceedings.neurips.cc/paper_files/paper/2023/file/7b76eea0c3683e440c3d362620f578cd-Paper-Conference.pdf) **This looks like those: Illuminating prototypical concepts using multiple visualizations** [:octocat:](https://github.com/Henrymachiyu/This-looks-like-those_ProtoConcepts)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+We present ProtoConcepts, a method for interpretable image classification combining deep learning and  
+case-based reasoning using prototypical parts. 
+Existing work in prototype-based image classification uses a “this looks like that” reasoning process, 
+which dissects a test image by finding prototypical parts and combining evidence from these prototypes 
+to make a final classification. 
+However, all of the existing prototypical part-based image classifiers provide only one-to-one comparisons, 
+where a single training image patch serves as a prototype to compare with a part of our test image. 
+With these single-image comparisons, it can often be difficult to identify the underlying concept being 
+compared (e.g., “is it comparing the color or the shape?”). 
+Our proposed method modifies the architecture of prototype-based networks to instead learn prototypical 
+concepts which are visualized using multiple image patches. 
+Having multiple visualizations of the same prototype allows us to more easily identify the concept captured 
+by that prototype (e.g., “the test image and the related training patches are all the same shade of blue”), 
+and allows our model to create richer, more interpretable visual explanations. 
+Our experiments show that our “this looks like those” reasoning process can be applied as a modification to 
+a wide range of existing prototypical image classification networks while achieving comparable accuracy on benchmark datasets.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+dissect : 分解
+underlying : 基础的
+</pre>
+</details>
 
 <pre>
 @article{ma2023looks,
@@ -311,6 +466,47 @@ engender : 产生
 
 - [[2024-WACV]](https://openaccess.thecvf.com/content/WACV2024/papers/Carmichael_Pixel-Grounded_Prototypical_Part_Networks_WACV_2024_paper.pdf) **Pixel-grounded prototypical part networks** [:octocat:](https://github.com/mpmath/mpmath)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Prototypical part neural networks (ProtoPartNNs), namely PROTOPNET and its derivatives, are an intrinsically
+interpretable approach to machine learning. 
+Their prototype learning scheme enables intuitive explanations of the form, this (prototype) looks like that 
+(testing image patch).
+But, does this actually look like that? 
+In this work, we delve into why object part localization and associated heat maps in past work are misleading. 
+Rather than localizing to object parts, existing ProtoPartNNs localize to the entire image, contrary to 
+generated explanatory visualizations. 
+We argue that detraction from these underlying issues is due to the alluring nature of visualizations 
+and an over-reliance on intuition. 
+To alleviate these issues, we devise new receptive field-based architectural constraints for meaningful 
+localization and a principled pixel space mapping for ProtoPartNNs. 
+To improve interpretability, we propose additional architectural improvements, including a simplified
+classification head. 
+We also make additional corrections to PROTOPNET and its derivatives, such as the use of a validation 
+set, rather than a test set, to evaluate generalization during training. 
+Our approach, PIXPNET (Pixel-grounded Prototypical part Network), is the only ProtoPartNN that
+truly learns and localizes to prototypical object parts.
+We demonstrate that PIXPNET achieves quantifiably improved interpretability without sacrificing accuracy.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+derivatives : 衍生的
+intrinsically : 内在的
+scheme : 方案
+alluring : 吸引人的
+intuitive : 直观的
+delve : 深入
+detraction : 减少
+underlying : 基础的
+alleviate : 减轻
+sacrificing : 牺牲
+</pre>
+</details>
+
 <pre>
 @inproceedings{carmichael2024pixel,
   title={Pixel-grounded prototypical part networks},
@@ -324,6 +520,34 @@ engender : 产生
 ![alt text](images/image-10.png)
 
 - [[2024-AAAI]](https://ojs.aaai.org/index.php/AAAI/article/view/30154) **Interpretability benchmark for evaluating spatial misalignment of prototypical parts explanations** 
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Prototypical parts-based networks are becoming increasingly popular due to their faithful 
+self-explanations. 
+However, their similarity maps are calculated in the penultimate network layer. 
+Therefore, the receptive field of the prototype activation region often depends on parts of the 
+image outside this region, which can lead to misleading interpretations. 
+We name this undesired behavior a spatial explanation misalignment and introduce an interpretability 
+benchmark with a set of dedicated metrics for quantifying this phenomenon. 
+In addition, we propose a method for misalignment compensation and apply it to existing 
+state-of-the-art models. 
+We show the expressiveness of our benchmark and the effectiveness of the proposed compensation 
+methodology through extensive empirical studies.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+penultimate : 倒数第二层
+undesired : 不想要的
+compensation : 补偿
+expressiveness : 表达能力
+empirical : 经验的
+</pre>
+</details>
 
 <pre>
 @inproceedings{sacha2024interpretability,
@@ -340,6 +564,45 @@ engender : 产生
 ![alt text](images/image-11.png)
 
 - [[2024-AAAI]](https://ojs.aaai.org/index.php/AAAI/article/view/30109) **On the concept trustworthiness in concept bottleneck models** [:octocat:](https://github.com/hqhQAQ/ProtoCBM)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Concept Bottleneck Models (CBMs), which break down the reasoning process into the input-to-concept 
+mapping and the concept-to-label prediction, have garnered signifcant attention due to their remarkable 
+interpretability achieved by the interpretable concept bottleneck. 
+However, despite the transparency of the concept-to-label prediction, the mapping from the input to 
+the intermediate concept remains a black box, giving rise to concerns about the trustworthiness of the
+learned concepts (i.e., these concepts may be predicted based on spurious cues). 
+The issue of concept untrustworthiness greatly hampers the interpretability of CBMs, thereby hindering 
+their further advancement. 
+To conduct a comprehensive analysis on this issue, in this study we establish a benchmark
+to assess the trustworthiness of concepts in CBMs. 
+A pioneering metric, referred to as concept trustworthiness score, is proposed to gauge whether the 
+concepts are derived from relevant regions. 
+Additionally, an enhanced CBM is introduced, enabling concept predictions to be made specifcally
+from distinct parts of the feature map, thereby facilitating the exploration of their related regions. 
+Besides, we introduce three modules, namely the cross-layer alignment (CLA) module, the cross-image 
+alignment (CIA) module, and the prediction alignment (PA) module, to further enhance the concept 
+trustworthiness within the elaborated CBM. 
+The experiments on five datasets across ten architectures demonstrate that without using any concept 
+localization annotations during training, our model improves the concept trustworthiness by a large margin, 
+meanwhile achieving superior accuracy to the state-of-the-arts.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+transparency : 透明度
+spurious : 无意义的
+hamper : 阻碍
+gauge : 测量
+derived : 衍生的
+margin : 差距
+</pre>
+</details>
+
 
 <pre>
 @inproceedings{huang2024concept,
