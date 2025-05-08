@@ -196,6 +196,34 @@ practitioners : 从业人员
 
 - [[2022-ECCV]](https://arxiv.org/pdf/2112.03184) **HIVE: Evaluating the human interpretability of visual explanations** [:octocat:](https://github.com/princetonvisualai/HIVE)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+As AI technology is increasingly applied to high-impact, high-risk domains, 
+there have been a number of new methods aimed at making AI models more human interpretable.
+Despite the recent growth of interpretability work, there is a lack of systematic evaluation of proposed
+techniques. 
+In this work, we introduce HIVE (Human Interpretability of Visual Explanations), 
+a novel human evaluation framework that assesses the utility of explanations to human users in AI-assisted 
+decision making scenarios, and enables falsifiable hypothesis testing, cross-method comparison, 
+and human-centered evaluation of visual interpretability methods. 
+To the best of our knowledge, this is the first work of its kind. 
+Using HIVE, we conduct IRB-approved human studies with nearly 1000 participants and evaluate four methods 
+that represent the diversity of computer vision interpretability works: GradCAM, BagNet, ProtoPNet, and ProtoTree.
+Our results suggest that explanations engender human trust, even for incorrect predictions, 
+yet are not distinct enough for users to distinguish between correct and incorrect predictions. 
+We open-source HIVE to enable future studies and encourage more human-centered approaches to interpretability research.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+engender : 产生
+</pre>
+</details>
+
+
 <pre>
 @inproceedings{kim2022hive,
   title={HIVE: Evaluating the human interpretability of visual explanations},
