@@ -34,6 +34,8 @@
 <div id = "s2"></div>
 
 - :octocat:: Code
+- ℹ️: Introduction
+- ⚠️: Remark
 
 ## 🕐 1. Prototype Learning for Image Classification
 <div id = "s3"></div>
@@ -138,7 +140,7 @@
 
 ![alt text](images/image-6.png)
 
-- [[2023-ICCV]](https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_Learning_Support_and_Trivial_Prototypes_for_Interpretable_Image_Classification_ICCV_2023_paper.pdf) **Learning support and trivial prototypes for interpretable image classification**
+- [[2023-ICCV]](https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_Learning_Support_and_Trivial_Prototypes_for_Interpretable_Image_Classification_ICCV_2023_paper.pdf) **Learning support and trivial prototypes for interpretable image classification**[:octocat:](https://github.com/cwangrun/ST-ProtoPNet)
 
 <pre>
 @inproceedings{wang2023learning,
@@ -329,7 +331,7 @@
 
 ![alt text](images/image-19.png)
 
-- [[2025-TPAMI]](https://ieeexplore.ieee.org/abstract/document/10982376) **Mixture of gaussian-distributed prototypes with generative modelling for interpretable and trustworthy image recognition**
+- [[2025-TPAMI]](https://ieeexplore.ieee.org/abstract/document/10982376) **Mixture of gaussian-distributed prototypes with generative modelling for interpretable and trustworthy image recognition**[:octocat:](https://github.com/cwangrun/MGProto)
 
 <pre>
 @article{wang2025mixture,
