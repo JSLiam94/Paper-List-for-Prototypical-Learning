@@ -34,7 +34,6 @@
 <div id = "s2"></div>
 
 - :octocat: : Code
-- ℹ️ : Introduction
 - ⚠️ : Remark
 
 ## 🕐 1. Prototype Learning for Image Classification
@@ -42,37 +41,7 @@
 
 - [[2017-NIPS]](https://proceedings.neurips.cc/paper_files/paper/2017/file/cb8da6767461f2812ae4290eac7cbc42-Paper.pdf) **Prototypical networks for few-shot learning** [:octocat:](https://github.com/jakesnell/prototypical-networks)
 
-ℹ️
-## 1. Background and Objective  
-Few-shot classification aims to enable a model to recognize new classes given only a handful of labeled examples per class. Traditional training often leads to severe overfitting when data are scarce, whereas humans can learn from one or a few examples. Prototypical Networks address this by learning an embedding function that maps inputs into a metric space where samples from the same class cluster around a single prototype vector—the mean of embedded support examples for that class. At test time, query points are classified by finding the nearest class prototype in this space :contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}.
-
-## 2. Model and Training Strategy  
-
-### 2.1 Prototype Computation  
-Given a support set \(S_k = \{(x_i, y_i)\colon y_i = k\}\) for class \(k\), the prototype is  
-\[
-c_k = \frac{1}{|S_k|} \sum_{(x_i, y_i)\in S_k} f_\phi(x_i),
-\]  
-where \(f_\phi\) is a learnable embedding‐network :contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}.
-
-### 2.2 Classification Mechanism  
-For a query example \(x\), compute its embedding \(f_\phi(x)\) and measure its squared Euclidean distance to each prototype. The probability of assigning \(x\) to class \(k\) is  
-\[
-p_\phi(y = k \mid x) = \frac{\exp\bigl(-\|f_\phi(x) - c_k\|^2\bigr)}{\sum_{k'} \exp\bigl(-\|f_\phi(x) - c_{k'}\|^2\bigr)}.
-\] :contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}
-
-### 2.3 Episodic Training  
-Training proceeds by sampling “episodes” that mimic few-shot tasks: each episode randomly selects \(N\) classes (“N-way”) and a small support set of \(K\) examples per class (“K-shot”), along with a batch of query examples. This episodic regime aligns training and evaluation conditions, improving generalization across tasks :contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7}.
-
-## 3. Experiments and Results  
-
-- **Omniglot**: On 20-way 1-shot and 5-shot tasks, Prototypical Networks achieve state-of-the-art accuracy, outperforming matching networks and meta-learner LSTMs.  
-- **miniImageNet**: In the 5-way 1-shot setting, they reach around 49.4% accuracy; in 5-way 5-shot, about 68.2%, surpassing prior baselines in both speed and performance.  
-- **Zero-shot on CUB-200**: By using class attribute vectors as prototypes and mapping image embeddings into the same space, they obtain 54.8%–58.3% accuracy, competitive with the best zero-shot methods :contentReference[oaicite:8]{index=8}:contentReference[oaicite:9]{index=9}.
-
-## 4. Conclusion and Future Directions  
-Prototypical Networks offer a simple yet powerful metric-based approach for few- and zero-shot learning, achieving strong performance with minimal architectural complexity. Future work could explore alternative Bregman divergences beyond squared Euclidean distance to better capture class distributions and further improve adaptability to diverse tasks :contentReference[oaicite:10]{index=10}:contentReference[oaicite:11]{index=11}.  
-
+- [Abstract] We propose Prototypical Networks for the problem of few-shot classification, where a classifier must generalize to new classes not seen in the training set, given only a small number of examples of each new class. Prototypical Networks learn a metric space in which classification can be performed by computing distances to prototype representations of each class. Compared to recent approaches for few-shot learning, they reflect a simpler inductive bias that is beneficial in this limited-data regime, and achieve excellent results. We provide an analysis showing that some simple design decisions can yield substantial improvements over recent approaches involving complicated architectural choices and meta-learning. We further extend Prototypical Networks to zero-shot learning and achieve state-of-the-art results on the CU-Birds dataset.
 
 <pre>
 @article{snell2017prototypical,
