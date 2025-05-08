@@ -620,6 +620,37 @@ margin : 差距
 
 - [[2024-ECCV]](https://arxiv.org/pdf/2407.12200) **This Probably Looks Exactly Like That: An Invertible Prototypical Network** [:octocat:](https://github.com/craymichael/ProtoFlow)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+We combine concept-based neural networks with generative, flow-based classifiers into a novel, 
+intrinsically explainable, exactly invertible approach to supervised learning. 
+Prototypical neural networks, a type of concept-based neural network, represent an exciting way 
+forward in realizing human-comprehensible machine learning without concept annotations, 
+but a human-machine semantic gap continues to haunt current approaches. 
+We find that reliance on indirect interpretation functions for prototypical explanations imposes 
+a severe limit on prototypes’ informative power. 
+From this, we posit that invertibly learning prototypes as distributions over the latent space 
+provides more robust, expressive, and interpretable modeling. 
+We propose one such model, called ProtoFlow, by composing a normalizing flow with Gaussian mixture models. 
+ProtoFlow (1) sets a new state-of-the-art in joint generative and predictive modeling
+and (2) achieves predictive performance comparable to existing prototypical neural networks while 
+enabling richer interpretation.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+intrinsically : 本质上
+invertible : 可逆的
+haunt : 困扰
+impose : 强加
+informative : 信息丰富的
+posit : 定位
+</pre>
+</details>
+
 <pre>
 @inproceedings{carmichael2024probably,
   title={This probably looks exactly like that: An invertible prototypical network},
@@ -635,6 +666,35 @@ margin : 差距
 
 - [[2024-NIPS]](https://proceedings.neurips.cc/paper_files/paper/2024/file/48dfc849640344e2d58df0b5bb78c33b-Paper-Conference.pdf) **Interpretable Image Classification with Adaptive Prototype-based Vision Transformers** [:octocat:](https://github.com/Henrymachiyu/ProtoViT)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+We present ProtoViT, a method for interpretable image classification combining deep learning 
+and case-based reasoning. 
+This method classifies an image by comparing it to a set of learned prototypes, providing 
+explanations of the form “this looks like that.” 
+In our model, a prototype consists of parts, which can deform over irregular geometries to 
+create a better comparison between images. 
+Unlike existing models that rely on Convolutional Neural Network (CNN) backbones and spatially
+rigid prototypes, our model integrates Vision Transformer (ViT) backbones into
+prototype based models, while offering spatially deformed prototypes that not only
+accommodate geometric variations of objects but also provide coherent and clear
+prototypical feature representations with an adaptive number of prototypical parts.
+Our experiments show that our model can generally achieve higher performance
+than the existing prototype based models. 
+Our comprehensive analyses ensure that the prototypes are consistent and the 
+interpretations are faithful.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+deform : 变形
+</pre>
+</details>
+
+
 <pre>
 @inproceedings{ma2024interpretable,
   title={Interpretable Image Classification with Adaptive Prototype-based Vision Transformers},
@@ -647,6 +707,40 @@ margin : 差距
 ![alt text](images/image-14.png)
 
 - [[2024-CVPR]](https://openaccess.thecvf.com/content/CVPR2024/papers/Wang_MCPNet_An_Interpretable_Classifier_via_Multi-Level_Concept_Prototypes_CVPR_2024_paper.pdf) **Mcpnet: An interpretable classifier via multi-level concept prototypes** [:octocat:](https://github.com/NVlabs/MCPNet)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Recent advancements in post-hoc and inherently interpretable methods have markedly enhanced the 
+explanations of black box classifier models. 
+These methods operate either through post-analysis or by integrating concept learning during model training. 
+Although being effective in bridging the semantic gap between a model’s latent space and human interpretation, 
+these explanation methods only partially reveal the model’s decision-making process.
+The outcome is typically limited to high-level semantics derived from the last feature map. 
+We argue that the explanations lacking insights into the decision processes at low and mid-level features are 
+neither fully faithful nor useful.
+Addressing this gap, we introduce the Multi-Level Concept Prototypes Classifier (MCPNet), an inherently 
+interpretable model. 
+MCPNet autonomously learns meaningful concept prototypes across multiple feature map levels using 
+Centered Kernel Alignment (CKA) loss and an energy-based weighted PCA mechanism, and it does so without reliance
+on predefined concept labels. 
+Further, we propose a novel classifier paradigm that learns and aligns multi-level concept prototype distributions 
+for classification purposes via Class-aware Concept Distribution (CCD) loss. 
+Our experiments reveal that our proposed MCPNet while being adaptable to various model architectures, offers 
+comprehensive multi-level explanations while maintaining classification accuracy. 
+Additionally, its concept distribution-based classification approach shows improved generalization capabilities 
+in few-shot classification scenarios.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+inherently : 固有地
+derived : 衍生的
+paradigm : 范式
+</pre>
+</details>
 
 <pre>
 @inproceedings{wang2024mcpnet,
@@ -662,6 +756,34 @@ margin : 差距
 
 - [[2024-arXiv]](https://arxiv.org/pdf/2406.14675) **This looks better than that: Better interpretable models with protopnext**
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Prototypical-part models are a popular interpretable alternative to black-box deep learning models for 
+computer vision. 
+However, they are difficult to train, with high sensitivity to hyperparameter tuning, inhibiting their 
+application to new datasets and our understanding of which methods truly improve their performance. 
+To facilitate the careful study of prototypical-part networks (ProtoPNets), we create a new framework 
+for integrating components of prototypical-part models – ProtoPNeXt.
+Using ProtoPNeXt, we show that applying Bayesian hyperparameter tuning and an angular prototype 
+similarity metric to the original ProtoPNet is sufficient to produce new state-of-the-art accuracy for 
+prototypical-part models on CUB-200 across multiple backbones. 
+We further deploy this framework to jointly optimize for accuracy and prototype interpretability as 
+measured by metrics included in ProtoPNeXt. 
+Using the same resources, this produces models with substantially superior semantics and changes in 
+accuracy between +1.3% and -1.5%. 
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+inhibiting : 抑制
+angular : 角度
+deploy : 部署
+</pre>
+</details>
+
 <pre>
 @article{willard2024looks,
   title={This looks better than that: Better interpretable models with protopnext},
@@ -674,6 +796,41 @@ margin : 差距
 ![alt text](images/image-16.png)
 
 - [[2025-ICASSP]](https://ieeexplore.ieee.org/abstract/document/10890753) **Prototypical Part Transformer for Interpretable Image Recognition**
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Prototypical Part Networks facilitate interpretable decision-making processes, with the 
+classification score computed by comparing test image patches to learned prototypes. 
+Existing work typically learns prototypes from Convolutional Neural Networks (CNNs). 
+However, learning prototypical parts directly in Vision Transformers (ViTs) results in 
+fragmented and noisy prototype activations. 
+To address this, we quantify the dispersion of prototypes’ responsive regions with the 
+Diffusion Index (DI). 
+Subsequently, we propose Prototypical Part Transformer (PPTformer), an interpretable model 
+designed to refine prototype learning in ViTs by introducing distinct prototypical branches, 
+either involving the CLS token or not. 
+In PPTformer, the prototype space is defined by orthogonal class-aware prototype vectors, 
+ensuring disentanglement and informativeness. 
+Additionally, class-aware activation refinement is introduced to focus attention and
+reduce DI. 
+Extensive experiments demonstrate that PPTformer outperforms state-of-the-art prototypical 
+learning methods and its non-interpretable counterparts, providing faithful local and
+global explanations.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+fragmented : 碎片化的
+dispersion : 分散
+refine : 提炼
+orthogonal : 正交的
+disentanglement : 解缠结
+informativeness : 信息量大
+</pre>
+</details>
 
 <pre>
 @inproceedings{yu2025prototypical,
@@ -689,6 +846,25 @@ margin : 差距
 ![alt text](images/image-17.png)
 
 - [[2025-AAAI]](https://ojs.aaai.org/index.php/AAAI/article/view/32173) **ProtoArgNet: Interpretable Image Classification with Super-Prototypes and Argumentation**[:octocat:](https://github.com/H-Ayoobi/ProtoArgNet_AAAI)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+We propose ProtoArgNet, a novel interpretable deep neural architecture for image classifcation in 
+the spirit of prototypical-part-learning as found, e.g., in ProtoPNet. 
+While earlier approaches associate every class with multiple prototypical-parts, ProtoArgNet uses 
+super-prototypes that combine prototypical-parts into a unifed class representation.
+This is done by combining local activations of prototypes in an MLP-like manner, enabling the 
+localization of prototypes and learning (non-linear) spatial relationships among them. 
+By leveraging a form of argumentation, ProtoArgNet is capable of providing both supporting 
+(i.e. ‘this looks like that’) and attacking (i.e. ‘this differs from that’) explanations.
+We demonstrate on several datasets that ProtoArgNet outperforms state-of-the-art 
+prototypical-part-learning approaches.
+Moreover, the argumentation component in ProtoArgNet is customisable to the user’s cognitive 
+requirements by a process of sparsifcation, which leads to more compact explanations compared 
+to state-of-the-art approaches.
+</pre>
+</details>
 
 <pre>
 @inproceedings{ayoobi2025protoargnet,
@@ -706,6 +882,27 @@ margin : 差距
 
 - [[2025-PR]](https://www.sciencedirect.com/science/article/pii/S0031320324006526) **Characteristic discriminative prototype network with detailed interpretation for classification**
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Existing prototype learning methods provide limited interpretation on which patches from input 
+images are similar to the corresponding prototypes. 
+Moreover, these methods do not consider the diversities among the prototypes, which leads to 
+low classification accuracy. 
+To address these problems, this paper proposes Characteristic Prototype Network (CDPNet) with 
+clear interpretation of local regions and characteristic. 
+The network designs the feature prototype to represent the discriminative feature and the 
+characteristic prototype to characterize the prototype’s properties among different individuals. 
+In addition, two novel strategies, dynamic region learning and similarity score minimization 
+among similar intra-class prototypes, are designed to learn the prototypes so as to improve their 
+diversity. 
+Therefore, CDPNet can explain which kind of characteristic within the image is the most important 
+one for classification tasks. 
+The experimental results on well-known datasets show that CDPNet can provide clearer interpretations 
+and obtain state-of-the-art classification performance in prototype learning.
+</pre>
+</details>
+
 <pre>
 @article{wen2025characteristic,
   title={Characteristic discriminative prototype network with detailed interpretation for classification},
@@ -721,6 +918,45 @@ margin : 差距
 ![alt text](images/image-19.png)
 
 - [[2025-TPAMI]](https://ieeexplore.ieee.org/abstract/document/10982376) **Mixture of gaussian-distributed prototypes with generative modelling for interpretable and trustworthy image recognition**[:octocat:](https://github.com/cwangrun/MGProto)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Prototypical-part methods, e.g., ProtoPNet, enhance interpretability in image recognition by linking 
+predictions to training prototypes, thereby offering intuitive insights into their decision-making. 
+Existing methods, which rely on a point-based learning of prototypes, typically face two critical 
+issues: 1) the learned prototypes have limited representation power and are not suitable to detect
+Out-of-Distribution (OoD) inputs, reducing their decision trustworthiness; 
+and 2) the necessary projection of the learned prototypes back into the space of training images 
+causes a drastic degradation in the predictive performance. 
+Furthermore, current prototype learning adopts an aggressive approach that considers only the 
+most active object parts during training, while overlooking sub-salient object regions which 
+still hold crucial classification information.
+In this paper, we present a new generative paradigm to learn prototype distributions, 
+termed as Mixture of Gaussian-distributed Prototypes (MGProto). 
+The distribution of prototypes from MGProto enables both interpretable image classification and 
+trustworthy recognition of OoD inputs. 
+The optimisation of MGProto naturally projects the learned prototype distributions back into 
+the training image space, thereby addressing the performance degradation caused by prototype projection. 
+Additionally, we develop a novel and effective prototype mining strategy that considers not only 
+the most active but also sub-salient object parts. 
+To promote model compacctness, we further propose to prune MGProto by removing prototypes with low
+importance priors. 
+Experiments on CUB-200-2011, Stanford Cars, Stanford Dogs, and Oxford-IIIT Pets datasets show that 
+MGProto achieves state-of-the-art image recognition and OoD detection performances, while providing 
+encouraging interpretability results.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+drastic : 剧烈的
+aggressive : 侵略性的
+mining : 挖掘
+compacctness : 紧凑性
+</pre>
+</details>
 
 <pre>
 @article{wang2025mixture,
