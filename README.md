@@ -1272,6 +1272,36 @@ tumour segmentation : 肿瘤分割
 
 - [[2023-MICCAI]](https://arxiv.org/pdf/2310.15741) **Interpretable medical image classification using prototype learning and privileged information** [:octocat:](https://github.com/XRad-Ulm/Proto-Caps)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Interpretability is often an essential requirement in medical imaging. 
+Advanced deep learning methods are required to address this need for explainability and high performance. 
+In this work, we investigate whether additional information available during the training process can
+be used to create an understandable and powerful model. 
+We propose an innovative solution called Proto-Caps that leverages the benefits of capsule networks, 
+prototype learning and the use of privileged information. 
+Evaluating the proposed solution on the LIDC-IDRI dataset shows that it combines increased interpretability 
+with above state-of-the-art prediction performance. 
+Compared to the explainable baseline model, our method achieves more than 6 % higher accuracy in predicting 
+both malignancy (93.0 %) and mean characteristic features of lung nodules.
+Simultaneously, the model provides case-based reasoning with prototype representations that allow visual 
+validation of radiologist-defined attributes.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+privileged : 特权的
+capsule : 胶囊
+malignancy : 恶性肿瘤
+lung nodules : 肺结节
+Simultaneously : 同时
+attributes : 属性
+</pre>
+</details>
+
 <pre>
 @inproceedings{gallee2023interpretable,
   title={Interpretable medical image classification using prototype learning and privileged information},
@@ -1286,6 +1316,46 @@ tumour segmentation : 肿瘤分割
 ![alt text](images/image-28.png)
 
 - [[2024-MICCAI]](https://papers.miccai.org/miccai-2024/paper/1022_paper.pdf) **Pamil: Prototype attention-based multiple instance learning for whole slide image classification** [:octocat:](https://github.com/Jiashuai-Liu/PAMIL)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Digital pathology images are not only crucial for diagnosing cancer but also play a significant role 
+in treatment planning, and research into disease mechanisms. 
+The multiple instance learning (MIL) technique provides an effective weakly-supervised methodology 
+for analyzing gigapixel Whole Slide Image (WSI). 
+Recent advancements in MIL approaches have predominantly focused on predicting a singular diagnostic 
+label for each WSI, simultaneously enhancing interpretability via attention mechanisms. 
+However, given the heterogeneity of tumors, each WSI may contain multiple histotypes. 
+Also, the generated attention maps often fail to offer a comprehensible explanation of the underlying 
+reasoning process. 
+These constraints limit the potential applicability of MIL-based methods in clinical settings. 
+In this paper, we propose a Prototype Attention-based Multiple Instance Learning (PAMIL) method, 
+designed to improve the model’s reasoning interpretability without compromising its classification 
+performance at the WSI level. 
+PAMIL merges prototype learning with attention mechanisms, enabling the model to quantify the
+similarity between prototypes and instances, thereby providing the interpretability at instance level. 
+Specifically, two branches are equipped in PAMIL, providing prototype and instance-level attention 
+scores, which are aggregated to derive bag-level predictions. 
+Extensive experiments are conducted on four datasets with two diverse WSI classification tasks,
+demonstrating the effectiveness and interpretability of our PAMIL.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+Digital pathology images : 数字病理图像
+gigapixel : 千兆像素
+predominantly : 主要地
+heterogeneity : 异质性
+tumor : 肿瘤
+histotypes : 组织类型
+underlying : 基础的
+aggregated : 聚合的
+derive : 获得
+</pre>
+</details>
 
 <pre>
 @inproceedings{liu2024pamil,
@@ -1302,6 +1372,34 @@ tumour segmentation : 肿瘤分割
 
 - [[2024-arXiv]](https://arxiv.org/pdf/2402.01410) **XAI for Skin Cancer Detection with Prototypes and Non-Expert Supervision** [:octocat:](https://github.com/MiguelC23/XAI-Skin-Cancer-Detection-A-Prototype-Based-Deep-Learning-Architecture-with-Non-Expert-Supervision)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Skin cancer detection through dermoscopy image analysis is a critical task. 
+However, existing models used for this purpose often lack interpretability and reliability, 
+raising the concern of physicians due to their black-box nature. 
+In this paper, we propose a novel approach for the diagnosis of melanoma using an 
+interpretable prototypical-part model.
+We introduce a guided supervision based on non-expert feedback through the incorporation of: 
+1) binary masks, obtained automatically using a segmentation network; 
+and 2) user-refined prototypes. 
+These two distinct information pathways aim to ensure that the learned prototypes correspond 
+to relevant areas within the skin lesion, excluding confounding factors beyond its boundaries. 
+Experimental results demonstrate that, even without expert supervision, our approach achieves 
+superior performance and generalization compared to non-interpretable models.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+dermoscopy : 皮肤镜检查
+melanoma : 黑色素瘤
+user-refined : 用户优化的
+confounding : 混淆因素
+</pre>
+</details>
+
 <pre>
 @article{correia2024xai,
   title={XAI for Skin Cancer Detection with Prototypes and Non-Expert Supervision},
@@ -1313,8 +1411,45 @@ tumour segmentation : 肿瘤分割
 
 ![alt text](images/image-30.png)
 
-🕐 (3) Alzheimer’s disease detection
+🕐 (3) Alzheimer’s disease detection、
+
 - [[2023-NeuroImage]](https://www.sciencedirect.com/science/article/pii/S1053811923002197) **Estimating explainable Alzheimer's disease likelihood map via clinically-guided prototype learning** [:octocat:](https://github.com/ku-milab/XADLiME)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Identifying Alzheimer’s disease (AD) involves a deliberate diagnostic process owing to its innate 
+traits of irreversibility with subtle and gradual progression. 
+These characteristics make AD biomarker identification from structural brain imaging 
+(e.g., structural MRI) scans quite challenging. 
+Using clinically-guided prototype learning, we propose a novel deep-learning approach through 
+eXplainable AD Likelihood Map Estimation (XADLiME) for AD progression modeling over 3D sMRIs. 
+Specifically, we establish a set of topologically-aware prototypes onto the clusters of latent 
+clinical features, uncovering an AD spectrum manifold. 
+Considering this pseudo map as an enriched reference, we employ an estimating network to 
+approximate the AD likelihood map over a 3D sMRI scan. 
+Additionally, we promote the explainability of such a likelihood map by revealing a 
+comprehensible overview from clinical and morphological perspectives. 
+During the inference, this estimated likelihood map served as a substitute for unseen 
+sMRI scans for effectively conducting the downstream task while providing
+thorough explainable states.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+deliberate : 慎重的
+innate : 固有的
+traits : 特质
+topologically-aware : 拓扑感知的
+uncovering : 揭示
+AD spectrum manifold : 阿尔茨海默病谱系流形
+pseudo : 伪造的
+morphological : 形态学的
+substitute : 替代
+</pre>
+</details>
 
 <pre>
 @article{mulyadi2023estimating,
@@ -1332,6 +1467,41 @@ tumour segmentation : 肿瘤分割
 
 - [[2023-IPMI]](https://arxiv.org/pdf/2303.07125) **Don't panic: Prototypical additive neural network for interpretable classification of alzheimer's disease** [:octocat:](https://github.com/ai-med/PANIC)
 
+<details>
+<summary> Abstract </summary>
+<pre>
+Alzheimer’s disease (AD) has a complex and multifactorial etiology, which requires 
+integrating information about neuroanatomy, genetics, and cerebrospinal fluid 
+biomarkers for accurate diagnosis. 
+Hence, recent deep learning approaches combined image and tabular information to 
+improve diagnostic performance. 
+However, the black-box nature of such neural networks is still a barrier for 
+clinical applications, in which understanding the decision of a heterogeneous model 
+is integral. 
+We propose PANIC, a prototypical additive neural network for interpretable AD classification 
+that integrates 3D image and tabular data. 
+It is interpretable by design and, thus, avoids the need for post-hoc explanations that try 
+to approximate the decision of a network. 
+Our results demonstrate that PANIC achieves state-of-the-art performance in AD classifi-
+cation, while directly providing local and global explanations. 
+Finally, we show that PANIC extracts biologically meaningful signatures of AD, and
+satisfies a set of desirable desiderata for trustworthy machine learning.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+multifactorial : 多方面的
+etiology : 病因
+neuroanatomy : 神经解剖学
+cerebrospinal fluid : 脑脊液
+heterogeneous : 异质的
+integral : 重要的
+desiderata : 理想的
+</pre>
+</details>
+
 <pre>
 @inproceedings{wolf2023don,
   title={Don’t panic: Prototypical additive neural network for interpretable classification of alzheimer’s disease},
@@ -1346,6 +1516,44 @@ tumour segmentation : 肿瘤分割
 ![alt text](images/image-32.png)
 
 - [[2024-MICCAI]](https://arxiv.org/pdf/2403.18328) **Pipnet3d: Interpretable detection of alzheimer in mri scans** 
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Information from neuroimaging examinations is increasingly used to support 
+diagnoses of dementia, e.g., Alzheimer’s disease. 
+While current clinical practice is mainly based on visual inspection and 
+feature engineering, Deep Learning approaches can be used to automate the
+analysis and to discover new image-biomarkers. 
+Part-prototype neural networks (PP-NN) are an alternative to standard 
+blackbox models, and have shown promising results in general computer vision. 
+PP-NN’s base their reasoning on prototypical image regions that are learned 
+fully unsupervised, and combined with a simple-to-understand decision layer. 
+We present PIPNet3D, a PP-NN for volumetric images. 
+We apply PIPNet3D to the clinical diagnosis of Alzheimer’s Disease from 
+structural Magnetic Resonance Imaging (sMRI). 
+We assess the quality of prototypes under a systematic evaluation framework, 
+propose new functionally grounded metrics to evaluate brain prototypes and 
+develop an evaluation scheme to assess their coherency with domain experts. 
+Our results show that PIPNet3D is an interpretable, compact model for 
+Alzheimer’s diagnosis with its reasoning well aligned to medical domain knowledge. 
+Notably, PIPNet3D achieves the same accuracy as its blackbox counterpart; 
+and removing the remaining clinically irrelevant prototypes from its decision
+process does not decrease predictive performance.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+dementia : 痴呆
+volumetric : 体积
+scheme : 方案
+coherency : 一致性
+compact : 紧凑的
+</pre>
+</details>
+
 <pre>
 @inproceedings{de2024pipnet3d,
   title={Pipnet3d: Interpretable detection of alzheimer in mri scans},
@@ -1362,6 +1570,48 @@ tumour segmentation : 肿瘤分割
 🕐 (4) Mammography
 
 - [[2021-nature machine intelligence]](https://arxiv.org/pdf/2103.12308) **A case-based interpretable deep learning model for classification of mass lesions in digital mammography** [:octocat:](https://github.com/alinajadebarnett/iaiabl)
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Interpretability in machine learning models is important in high-stakes 
+decisions, such as whether to order a biopsy based on a mammographic exam. 
+Mammography poses important challenges that are not present in other 
+computer vision tasks: datasets are small, confounding information is present, 
+and it can be difficult even for a radiologist to decide between watchful 
+waiting and biopsy based on a mammogram alone.
+In this work, we present a framework for interpretable machine learning-based mammography. 
+In addition to predicting whether a lesion is malignant or benign, our work aims to 
+follow the reasoning processes of radiologists in detecting clinically relevant semantic 
+features of each image, such as the characteristics of the mass margins. 
+The framework includes a novel interpretable neural network algorithm that uses case-based 
+reasoning for mammography. 
+Our algorithm can incorporate a combination of data with whole image labelling and data 
+with pixel-wise annotations, leading to better accuracy and interpretability even with a
+small number of images. 
+Our interpretable models are able to highlight the classification-relevant parts of
+the image, whereas other methods highlight healthy tissue and confounding information. 
+Our models are decision aids, rather than decision makers, aimed at better overall 
+human-machine collaboration. 
+We do not observe a loss in mass margin classification accuracy over a black box 
+neural network trained on the same data.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+Mammography : 乳腺摄影
+mass : 肿块
+biopsy : 活检
+confounding : 混淆
+radiologist : 放射医师
+watchful : 仔细观察的
+malignant : 恶性的
+benign : 良性的
+margins : 边缘
+</pre>
+</details>
 
 <pre>
 @article{barnett2021case,
@@ -1380,6 +1630,42 @@ tumour segmentation : 肿瘤分割
 
 - [[2022-MICCAI]](https://arxiv.org/pdf/2209.12420) **Knowledge distillation to ensemble global and interpretable prototype-based mammogram classification models** 
 
+<details>
+<summary> Abstract </summary>
+<pre>
+State-of-the-art (SOTA) deep learning mammogram classifiers, trained with 
+weakly-labelled images, often rely on global models that produce predictions 
+with limited interpretability, which is a key barrier to their successful 
+translation into clinical practice. 
+On the other hand, prototype-based models improve interpretability by associating
+predictions with training image prototypes, but they are less accurate than global 
+models and their prototypes tend to have poor diversity.
+We address these two issues with the proposal of BRAIxProtoPNet++,
+which adds interpretability to a global model by ensembling it with a
+prototype-based model. 
+BRAIxProtoPNet++ distills the knowledge of the global model when training the
+prototype-based model with the goal of increasing the classification accuracy of the ensemble. 
+Moreover, we propose an approach to increase prototype diversity by guaranteeing that 
+all prototypes are associated with different training images. 
+Experiments on weakly-labelled private and public datasets show that BRAIx-ProtoPNet++ has 
+higher classification accuracy than SOTA global and prototype-based models. 
+Using lesion localisation to assess model interpretability, we show BRAIxProtoPNet++ is 
+more effective than other prototype-based models and post-hoc explanation of global models. 
+Finally, we show that the diversity of the prototypes learned by BRAIx-ProtoPNet++ is 
+superior to SOTA prototype-based approaches.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+Knowledge distillation : 知识蒸馏
+ensemble : 集成
+mammogram : 乳腺摄影
+ensembling : 集成学习
+</pre>
+</details>
+
 <pre>
 @inproceedings{wang2022knowledge,
   title={Knowledge distillation to ensemble global and interpretable prototype-based mammogram classification models},
@@ -1394,6 +1680,36 @@ tumour segmentation : 肿瘤分割
 ![alt text](images/image-24.png)
 
 - [[2024-CVPR Workshop]](https://openaccess.thecvf.com/content/CVPR2024W/DEF-AI-MIA/papers/Yang_FPN-IAIA-BL_A_Multi-Scale_Interpretable_Deep_Learning_Model_for_Classification_of_CVPRW_2024_paper.pdf) **FPN-IAIA-BL: A Multi-Scale Interpretable Deep Learning Model for Classification of Mass Margins in Digital Mammography** 
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Digital mammography is essential to breast cancer detection, and deep learning offers 
+promising tools for faster and more accurate mammogram analysis. 
+In radiology and other high-stakes environments, uninterpretable (“black box”) deep 
+learning models are unsuitable and there is a call in these fields to make interpretable models. 
+Recent work in interpretable computer vision provides transparency to these formerly black boxes 
+by utilizing prototypes for case-based explanations, achieving high accuracy in applications including mammography. 
+However, these models struggle with precise feature localization, reasoning on large portions of an image 
+when only a small part is relevant. 
+This paper addresses this gap by proposing a novel multi-scale interpretable deep learning model for 
+mammographic mass margin classification. 
+Our contribution not only offers an interpretable model with reasoning aligned with radiologist practices, 
+but also provides a general architecture for computer vision with user-configurable prototypes from 
+coarse- to fine-grained prototypes.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+Mass margin : 肿块边缘
+transparency : 透明度
+formerly : 以前的
+user-configurable : 用户可配置的
+coarse- to fine-grained : 粗到细粒度
+</pre>
+</details>
 
 <pre>
 @inproceedings{yang2024fpn,
@@ -1410,6 +1726,33 @@ tumour segmentation : 肿瘤分割
 🕐 (5) Chest X-ray
 
 - [[2021-CVPR]](https://openaccess.thecvf.com/content/CVPR2021/papers/Kim_XProtoNet_Diagnosis_in_Chest_Radiography_With_Global_and_Local_Explanations_CVPR_2021_paper.pdf) **XProtoNet: diagnosis in chest radiography with global and local explanations** 
+
+<details>
+<summary> Abstract </summary>
+<pre>
+Automated diagnosis using deep neural networks in chest radiography can help radiologists detect 
+life-threatening diseases. 
+However, existing methods only provide predictions without accurate explanations, undermining 
+the trustworthiness of the diagnostic methods. 
+Here, we present XProtoNet, a globally and locally interpretable diagnosis framework for chest radiography. 
+XProtoNet learns representative patterns of each disease from X-ray images,
+which are prototypes, and makes a diagnosis on a given X-ray image based on the patterns. 
+It predicts the area where a sign of the disease is likely to appear and compares the features in the 
+predicted area with the prototypes. 
+It can provide a global explanation, the prototype, and a local explanation, how the 
+prototype contributes to the prediction of a single image. 
+Despite the constraint for interpretability, XProtoNet achieves state-of-the-art classification 
+performance on the public NIH chest X-ray dataset.
+</pre>
+</details>
+
+<details>
+<summary> Vocabulary </summary>
+<pre>
+undermining : 降低信任
+trustworthiness : 信任度
+</pre>
+</details>
 
 <pre>
 @inproceedings{kim2021xprotonet,
