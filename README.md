@@ -973,7 +973,7 @@ compacctness : 紧凑性
 ## 🕐 2. Prototype Learning for Medical Image Classification
 <div id = "s4"></div>
 
-🕐 (1) Ophthalmology
+### 🕐 (1) Ophthalmology
 
 - [[2022-MICCAI]](https://arxiv.org/pdf/2208.00457) **INSightR-Net: interpretable neural network for regression using similarity-based comparisons to prototypical examples** [:octocat:](https://github.com/lindehesse/INSightR-Net)
 
@@ -1117,7 +1117,7 @@ multi-label chest X-ray classification : 胸部X光分类
 
 ![alt text](images/image-23.png)
 
-🕐 (2) Cancer
+### 🕐 (2) Cancer
 
 - [[2023-JBHI]](https://ieeexplore.ieee.org/abstract/document/10290723) **Interpretable inference and classification of tissue types in histological colorectal cancer slides based on ensembles adaptive boosting prototype tree** 
 
@@ -1411,7 +1411,7 @@ confounding : 混淆因素
 
 ![alt text](images/image-30.png)
 
-🕐 (3) Alzheimer’s disease detection、
+### 🕐 (3) Alzheimer’s disease detection、
 
 - [[2023-NeuroImage]](https://www.sciencedirect.com/science/article/pii/S1053811923002197) **Estimating explainable Alzheimer's disease likelihood map via clinically-guided prototype learning** [:octocat:](https://github.com/ku-milab/XADLiME)
 
@@ -1567,7 +1567,7 @@ compact : 紧凑的
 
 ![alt text](images/image-33.png)
 
-🕐 (4) Mammography
+### 🕐 (4) Mammography
 
 - [[2021-nature machine intelligence]](https://arxiv.org/pdf/2103.12308) **A case-based interpretable deep learning model for classification of mass lesions in digital mammography** [:octocat:](https://github.com/alinajadebarnett/iaiabl)
 
@@ -1723,7 +1723,7 @@ coarse- to fine-grained : 粗到细粒度
 
 ![alt text](images/image-35.png)
 
-🕐 (5) Chest X-ray
+### 🕐 (5) Chest X-ray
 
 - [[2021-CVPR]](https://openaccess.thecvf.com/content/CVPR2021/papers/Kim_XProtoNet_Diagnosis_in_Chest_Radiography_With_Global_and_Local_Explanations_CVPR_2021_paper.pdf) **XProtoNet: diagnosis in chest radiography with global and local explanations** 
 
@@ -1824,7 +1824,7 @@ trustworthiness : 信任度
 
 ![alt text](images/image-38.png)
 
-🕐 (6) Echocardiography
+### 🕐 (6) Echocardiography
 
 - [[2023-MICCAI]](https://arxiv.org/pdf/2307.14433) **Protoasnet: Dynamic prototypes for inherently interpretable and uncertainty-aware aortic stenosis classification in echocardiography** [:octocat:](https://github.com/hooman007/ProtoASNet)
 
@@ -1856,7 +1856,7 @@ trustworthiness : 信任度
 
 ![alt text](images/image-40.png)
 
-🕐 (7) COVID-19
+### 🕐 (7) COVID-19
 
 - [[2022-NN]](https://www.sciencedirect.com/science/article/pii/S0893608022001125) **Think positive: An interpretable neural network for image recognition** 
 
@@ -1874,7 +1874,7 @@ trustworthiness : 信任度
 
 ![alt text](images/image-41.png)
 
-🕐 (8) Heart disease
+### 🕐 (8) Heart disease
 
 - [[2025-MIA]](https://www.sciencedirect.com/science/article/pii/S1361841525000854) **Graph-based prototype inverse-projection for identifying cortical sulcal pattern abnormalities in congenital heart disease** [:octocat:](https://github.com/hookhy/surfacepip)
 
@@ -1892,7 +1892,7 @@ trustworthiness : 信任度
 
 ![alt text](images/image-42.png)
 
-🕐 (9) Brain tumor
+### 🕐 (9) Brain tumor
 
 - [[2024-MIDL]](https://proceedings.mlr.press/v227/wei24a/wei24a.pdf) **Mprotonet: A case-based interpretable model for brain tumor classification with 3d multi-parametric magnetic resonance imaging** [:octocat:](https://github.com/aywi/mprotonet)
 
@@ -1909,7 +1909,7 @@ trustworthiness : 信任度
 
 ![alt text](images/image-43.png)
 
-🕐 (10) Cephalometric
+### 🕐 (10) Cephalometric
 
 - [[2024-MICCAI]](https://arxiv.org/pdf/2406.12577) **Cephalometric landmark detection across ages with prototypical network** [:octocat:](https://github.com/ShanghaiTech-IMPACT/CeLDA/)
 
@@ -1926,7 +1926,7 @@ trustworthiness : 信任度
 
 ![alt text](images/image-44.png)
 
-🕐 (11) Others
+### 🕐 (11) Others
 
 - [[2024-TMI]](https://ieeexplore.ieee.org/abstract/document/10378976) **A test statistic estimation-based approach for establishing self-interpretable cnn-based binary classifiers** 
 
